@@ -1,0 +1,40 @@
+{
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "name": {
+      "$id": "/properties/name",
+      "type": "string",
+      "title": "The Name Schema ",
+      "default": "",
+      "examples": ["Fluffy"]
+    },
+    "color": {
+      "$id": "/properties/color",
+      "type": "string",
+      "title": "The Color Schema ",
+      "default": "",
+      "examples": ["blue"]
+    },
+    "age": {
+      "$id": "/properties/age",
+      "type": "integer",
+      "title": "The Age Schema ",
+      "default": 0,
+      "examples": [2]
+    },
+    "designated_humans": {
+      "$id": "/properties/designated_humans",
+      "type": "array",
+      "items": {
+        "$id": "/properties/designated_humans/items",
+        "type": "string",
+        "title": "The 0th Schema ",
+        "default": "",
+        "examples": ["Kristen", "Kelley"]
+      }
+    }
+  },
+  "required": ["name", "color", "age"]
+}

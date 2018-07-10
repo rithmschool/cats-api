@@ -19,6 +19,7 @@
   "homepage": "https://github.com/rithmschool/cats-api#readme",
   "dependencies": {
     "body-parser": "^1.18.3",
-    "express": "^4.16.3"
+    "express": "^4.16.3",
+    "jsonschema": "^1.2.4"
   }
 }
