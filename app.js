@@ -13,6 +13,7 @@ app.post('/cats', (req, res, next) => {
   // Return an error if there is no cat name
   // Return an error if there is no cat color
   // Return an error if there is no cat age
+  // return an error if there are extra or invalid keys
   // return an error if the cat name is not a string
   // return an error if the cat color is not a string
   // return an error if the cat age is not a number
@@ -25,9 +26,7 @@ app.get('/cats/:id', (req, res, next) => {
 });
 
 app.patch('/cats/:id', (req, res, next) => {
-  // Return an error if there is no cat name
-  // Return an error if there is no cat color
-  // Return an error if there is no cat age
+  // return an error if there are extra or invalid keys
   // return an error if the cat name is not a string
   // return an error if the cat color is not a string
   // return an error if the cat age is not a number
