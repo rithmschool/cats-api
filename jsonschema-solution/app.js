@@ -12,7 +12,7 @@ app.get('/cats', (req, res, next) => {
 
 app.post('/cats', (req, res, next) => {
   const validation = validate(req.body, catSchema);
-  if (!validation.isValid) {
+  if (!validation.valid) {
     return next(validation.errors);
   }
   return res.send('SUCCESS');
